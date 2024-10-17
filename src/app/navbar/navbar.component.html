@@ -1,0 +1,39 @@
+<!-- <mat-toolbar color="primary">
+    <span class="nav-left">
+        <span class="logo">Fuad Ahmed.</span>
+    </span>
+    <span class="nav-right">
+        <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a mat-button routerLink="/Education" routerLinkActive="active" >Education</a>
+        <a mat-button routerLink="/Skill" routerLinkActive="active">Skills</a>
+        <a mat-button routerLink="/About" routerLinkActive="active">About</a>
+        <a mat-button routerLink="/Projects" routerLinkActive="active">Latest Project</a>
+        <a mat-button routerLink="/Contact-Me" routerLinkActive="active">Contact</a>
+    </span>
+  </mat-toolbar> -->
+  
+  <mat-toolbar>
+    <span class="nav-left">
+      <span class="logo">Fuad Sultan</span>
+    </span>
+    <span class="nav-right">
+        <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a mat-button routerLink="/Education" routerLinkActive="active" >Education</a>
+        <a mat-button routerLink="/Skill" routerLinkActive="active">Skills</a>
+        <a mat-button routerLink="/About" routerLinkActive="active">About</a>
+        <a mat-button routerLink="/Projects" routerLinkActive="active">Latest Project</a>
+        <a mat-button routerLink="/Contact-Me" routerLinkActive="active">Contact</a>
+    </span>
+    <span class="nav-right-menu">
+      <mat-icon (click)="toggleMenu()"><i class="fa-solid fa-bars"></i></mat-icon>
+      <div *ngIf="isMenuOpen" class="dropdown-menu">
+        <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a mat-button routerLink="/Education" routerLinkActive="active" >Education</a>
+        <a mat-button routerLink="/Skill" routerLinkActive="active">Skills</a>
+        <a mat-button routerLink="/About" routerLinkActive="active">About</a>
+        <a mat-button routerLink="/Projects" routerLinkActive="active">Latest Project</a>
+        <a mat-button routerLink="/Contact-Me" routerLinkActive="active">Contact</a>
+      </div>
+    </span>
+  </mat-toolbar>
+  

@@ -1,0 +1,35 @@
+.about-container {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 60svw;
+    margin: 0 auto;
+    animation: fadeIn 4s;
+  }
+  
+  h1 {
+    color: green;
+    margin-bottom: 5%;
+    font-size: 2rem;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  
+  .highlight {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  

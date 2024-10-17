@@ -1,0 +1,104 @@
+.mat-toolbar {
+  height: 10svh;
+  background-color: rgba(5, 5, 5, 0.8);
+  position: sticky;
+  top: 0;
+}
+
+.nav-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-left .logo {
+  margin-left: 2svw;
+  font-weight: bold;
+  font-size: 1.5svw;
+  color: green;
+  animation: bounceInDown 3s;
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  animation: fadeInRight 4s;
+}
+
+.nav-right a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: green;
+  transition: width 0.3s ease;
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+.nav-right a.active {
+  color: green !important; /* Force the active link to be green */
+}
+
+.nav-right a.active::after {
+  width: 100%; /* Keep the underline on the active link */
+  background: green;
+}
+
+.nav-right-menu {
+  display: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 1%;
+  background: rgb(6, 81, 6);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.dropdown-menu a:hover {
+  color: green;
+}
+
+@media (max-width: 1067px) {
+
+  .nav-right {
+    display: none;
+  }
+  .nav-right-menu {
+    display: flex;
+  }
+  .mat-icon {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .nav-left .logo{
+    font-size: 90%;
+  }
+}
